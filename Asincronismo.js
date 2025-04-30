@@ -1,4 +1,4 @@
-// Asincronismo con Promise utilizando el SteamDB
+// Asincronismo utilizando la base de datos de SteamDB (en este caso) 
 const connectToSteamDB = (isConnected) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -12,7 +12,7 @@ const connectToSteamDB = (isConnected) => {
     .catch(err => console.log(err))
 
 
-// Utilizando una API
+// Utilizando una API Fake
 const ObtenerJuegos = fetch("https://fakestoreapi.com/products")
 ObtenerJuegos
     .then(respuesta => respuesta.json())
